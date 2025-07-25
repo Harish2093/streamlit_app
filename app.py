@@ -11,10 +11,7 @@ st.title("GenAI Query App")
 user_input = st.text_input("Enter your query:")
 
 
-system_prompt = """You are a helpful assistant that can answer questions based on the provided context.
-whenever you are asked about you please answer with the following context:
-I am a helpful assistant that can answer questions based on the provided context. this application is built by Harish Patil. deployed on streamlit cloud.
-"""
+system_prompt = st.secrets["system_message"]
 model = genai.GenerativeModel(model_name="gemini-1.5-flash", system_instruction = system_prompt)  # Initialize the model
 
 if st.button("Ask GenAI") and user_input:
