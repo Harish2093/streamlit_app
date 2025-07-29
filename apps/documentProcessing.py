@@ -77,7 +77,7 @@ class DocumentProcessingApplication:
         # Text input
         user_input = st.text_input(
             "💬 Enter your query:", 
-            placeholder="Ask me anything..."
+            placeholder="what do you want to know about the document?"
         )
         
         # Generate response button
