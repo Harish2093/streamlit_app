@@ -1,3 +1,7 @@
 .streamlit/
 notebooks/trial.ipynb
 .env
+test_qanda_module.py
+apps/README.md
+*.pyc
+*/__pycache__/
